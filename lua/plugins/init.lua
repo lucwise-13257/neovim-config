@@ -23,6 +23,10 @@ return {
       "nvim-lua/plenary.nvim",
       "neovim/nvim-lspconfig",
     },
+  },
+  {
+    "github/copilot.vim",
+    lazy = false
   }
   --
   -- {
