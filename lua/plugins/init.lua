@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -17,8 +17,7 @@ return {
   },
   {
     "lopi-py/luau-lsp.nvim",
-    opts = {
-    },
+    opts = {},
     dependencies = {
       "nvim-lua/plenary.nvim",
       "neovim/nvim-lspconfig",
@@ -26,18 +25,22 @@ return {
   },
   {
     "github/copilot.vim",
-    lazy = false
-  }
-  --
-  -- {
-  -- 	"williamboman/mason.nvim",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"lua-language-server", "stylua",
-  -- 			"html-lsp", "css-lsp" , "prettier"
-  -- 		},
-  -- 	},
-  -- },
+    lazy = false,
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "stylua",
+        "html-lsp",
+        "css-lsp",
+        "prettier",
+        "typescript-language-server",
+        "tailwindcss-language-server",
+      },
+    },
+  },
   --
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
